@@ -25,3 +25,29 @@ This project is a web-based real-time collaborative document editor, allowing mu
 *   **Database (Conceptual / Planned):**
     *   MongoDB (or PostgreSQL) - For storing user data and document content.
     *   *(Currently, the example uses in-memory storage for document content on the backend.)
+1. Create project root folder
+
+mkdir collaborative-editor
+cd collaborative-editor
+2. Setup backend
+
+mkdir backend
+cd backend
+npm init -y
+npm install express socket.io cors quill-delta
+npm install --save-dev nodemon
+
+3. Setup frontend
+Go back to project root and create frontend React app:
+
+cd ..
+npx create-react-app frontend
+cd frontend
+npm install react-quill socket.io-client
+
+
+To run backend
+--> npm run dev
+
+to run frontend
+--> npm start
