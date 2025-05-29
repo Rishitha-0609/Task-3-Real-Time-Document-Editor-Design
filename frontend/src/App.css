@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.editor-container {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+/* Quill's default Snow theme needs some height */
+.ql-editor {
+  min-height: 200px;
+}
+/* frontend/src/App.css */
+/* ... other styles ... */
+
+.editor-container {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+/* Quill's default Snow theme needs some height for the editor area */
+.ql-container.ql-snow {
+  min-height: 200px; /* Or any height you prefer */
+  border: 1px solid #ccc; /* If not already part of .editor-container */
+}
+.ql-editor {
+    min-height: 180px; /* A bit less than container for padding */
+    /* font-size: 16px; You can set default font size here */
+}
